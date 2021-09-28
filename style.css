@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --text-color: black;
+  --text-color-secundary: rgb(0, 0, 0);
+  --background: white;
+  --row-hover:rgba(228, 228, 228,0.6);
+  --dark-orange:rgb(209, 136, 0);
+}
+
+.darkmode{
+  --text-color: white;
+  --text-color-secundary: rgb(216, 216, 216);
+  --background:black;
+  --row-hover: rgb(26, 26, 26);
+}
+
+html, body{
+  font-family: 'Roboto',Arial, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif;  */
+  background: var(--background);
+  color: var(--text-color);
+}
+
+.container{
+  padding: 0 90px;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+}
+
+nav ul{
+  list-style: none;
+  display: flex;
+}
+
+nav ul li a{
+  padding: 15px 0;
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 20px;
+  margin: 0 10px;
+}
+
+nav ul li a:hover{
+border-top: 3px solid gray;
+}
+
+#logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#logo h1{
+  font-size: 20px;
+}
+#logo img{
+  width: 40px;
+  margin-right: 10px;
+}
+span{
+  color: var(--dark-orange);
+}
+
+.green{
+  color: green;
+}
+
+.title{
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+#sub-title{
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+#info{
+  margin-bottom:20px;
+  font-weight: 600;
+}
+
+#app-refresh{
+  margin-bottom: 10px;
+}
+
+.table{
+width: 100%;
+border-collapse: collapse;
+}
+
+thead{
+  color:var(--text-color-secundary);
+  font-size: 17px;
+}
+th{
+  padding: 10px 0;
+  border-bottom: 2px solid #9999;
+}
+
+.row:hover{
+  background-color: var(--row-hover);
+}
+
+td{
+  text-align: center;
+  padding: 5px 0;
+  border: none;
+  border-top: 1px solid #9999;
+  border-bottom: 1px solid #9999;
+}
+
+img{
+  width: 30px;
+}
+
+.white-color{
+  color: rgb(255, 255, 255) !important;
+}
+
+.percentage24h{
+  font-weight: 600;
+}
+.h24,
+.bold-text{
+  font-weight: 600;
+}
+
+.price{
+  color: #4267B2;
+  font-weight: 600;
+}
+
+.orange{
+  font-weight: 600;
+  color: rgb(209, 136, 0);
+}
+
+.update-green-bg{
+  background:  rgb(1, 143, 1);
+  color: white;
+}
+
+.update-red-bg{
+  background: #cc0000;
+  color: white;
+}
+
+/* smaller screens */
+
+@media (max-width: 1200px) {
+  .container{
+    padding: 0 40px;
+  }
+   .table-div{
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    }
+
+  img{
+    width: 20px;
+  }
+
+  .h24{
+    margin-right: 300px;
+  }
+
+  .table td{
+    padding: 5px 5px;
+  }
+
+}
+@media (max-width: 500px) {
+  .container{
+    padding: 0 15px;
+  }
+}

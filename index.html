@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <nav>
+      <div id="logo">
+        <img src="coin-cryptocurrency-icon.png" alt="logo">
+        <h1><span>Coin</span>Market Invest</h1>
+      </div>
+      <div>
+        <ul>
+          <li><a href="#"><i class="fas fa-adjust dark-mode-toogle"></i></a></li>
+          <!-- <li><a href="#">Info</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li> -->
+        </ul>
+      </div>
+    </nav>
+    <h1 class="title">Cryptocurrencies List</h1>
+    <p id="sub-title">50 most valuable Cryptocurrencies</p>
+    <div id="info">
+      <p id="app-refresh"><i class="far fa-clock"></i> App to API refresh rate: 3 second</p>
+      <p id="api-refresh"><i class="far fa-clock"></i> API to Market refresh rate: 20 - 30 seconds</p>
+    </div>
+    <div class="table-div">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Symbol</th>
+            <th>Name</th>
+            <th>Logo</th>
+            <th>Price</th>
+            <th>Market Cap</th>
+            <th>Circulating Supply</th>
+            <th>Volume</th>
+            <th>24h</th>
+            <th>% 24h</th>
+          </tr>
+        </thead>
+        <tbody id="crypto-results">
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+  <script src="dark-light-mode.js"></script>
+</body>
+
+</html>
