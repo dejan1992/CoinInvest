@@ -80,6 +80,7 @@ span{
   text-align: center;
   margin-bottom: 10px;
 }
+
 #sub-title{
   font-size: 20px;
   text-align: center;
@@ -93,6 +94,11 @@ span{
 
 #app-refresh{
   margin-bottom: 10px;
+}
+
+.swipe-message{
+  margin: 15px 0 10px 0;
+  color: var(--dark-orange);
 }
 
 .table{
