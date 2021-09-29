@@ -187,6 +187,9 @@ img{
 
 }
 @media (max-width: 500px) {
+  #logo img{
+    width: 30px;
+  }
   .container{
     padding: 0 15px;
   }
