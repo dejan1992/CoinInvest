@@ -13,7 +13,7 @@
   --row-hover:rgba(228, 228, 228,0.6);
   --dark-orange:rgb(209, 136, 0);
 }
-
+/* This class is added when dark mode is ON */
 .darkmode{
   --text-color: white;
   --text-color-secundary: rgb(216, 216, 216);
@@ -32,7 +32,6 @@ body{
 
 .container{
   padding: 0 90px;
-
 }
 
 nav{
@@ -42,6 +41,7 @@ nav{
   padding: 40px 0;
 }
 
+/* Navigation */
 nav ul{
   list-style: none;
   display: flex;
@@ -71,10 +71,6 @@ span{
   color: var(--dark-orange);
 }
 
-.green{
-  color: green;
-}
-
 .title{
   font-size: 35px;
   text-align: center;
@@ -96,11 +92,13 @@ span{
   margin-bottom: 10px;
 }
 
+/* Message for swiping table on mobile */
 .swipe-message{
   margin: 15px 0 10px 0;
   color: var(--dark-orange);
 }
 
+/* Table styling */
 .table{
 width: 100%;
 border-collapse: collapse;
@@ -131,10 +129,12 @@ td{
   border-bottom: 1px solid #9999;
 }
 
-img{
+/* Crypto logo */
+.coin-logo{
   width: 30px;
 }
 
+/* Color of text when refreshing */
 .white-color{
   color: rgb(255, 255, 255) !important;
 }
@@ -167,19 +167,20 @@ img{
   color: white;
 }
 
-/* smaller screens */
-
+/* Smaller screens */
+/* max-width: 1200px */
 @media (max-width: 1200px) {
   .container{
     padding: 0 40px;
   }
-   .table-div{
+
+  .table-div{
     display: block;
     overflow-x: auto;
     white-space: nowrap;
     }
 
-  img{
+  .coin-logo{
     width: 20px;
   }
 
@@ -192,14 +193,18 @@ img{
   }
 
 }
+
+/* max-width: 500px */
 @media (max-width: 500px) {
   #logo img{
     width: 30px;
     margin-right: 5px;
   }
+
   .container{
     padding: 0 15px;
   }
+
   .table-div{
     margin-bottom: 15px;
    }
