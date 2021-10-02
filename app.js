@@ -257,3 +257,10 @@ function createElement(elementType, elementClass) {
   element.classList.add(elementClass);
   return (element);
 }
+
+// Loader
+const loader = document.getElementById("loader");
+
+window.addEventListener("load", () => {
+  loader.classList.add("disapear");
+})
