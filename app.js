@@ -33,7 +33,7 @@ class UI {
     <td><img class="coin-logo" src="${cryptoRes.image}"></img></td>
     <td class = "price">${'$ ' + cryptoRes.curentPrice.toLocaleString()}</td>
     <td>${'$ ' + (cryptoRes.marketCap).toLocaleString()}</td>
-    <td class=""bold-text"">${cryptoRes.circulatingSupply.toLocaleString() + ' ' + cryptoRes.symbol.toUpperCase()}</td>
+    <td class="bold-text">${cryptoRes.circulatingSupply.toLocaleString() + ' ' + cryptoRes.symbol.toUpperCase()}</td>
     <td>${'$ ' + cryptoRes.totalVolume.toLocaleString()}</td>
     <td class="h24">${'$ ' + (cryptoRes.priceChange24h).toFixed(2)}</td>
     <td class="percentage24h">${(cryptoRes.marketCapChangePercentage24h).toFixed(2) + ' %'}</td>
