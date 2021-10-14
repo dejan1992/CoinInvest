@@ -1,4 +1,6 @@
 const list = document.getElementById("crypto-results");
+const liveTextCircle = document.querySelector(".live-green-text");
+
 
 // Crypto class
 class Cryto {
@@ -177,3 +179,8 @@ const loader = document.getElementById("loader");
 window.addEventListener("load", () => {
   loader.classList.add("disapear");
 })
+
+//LIVE circle blink
+setInterval(() => {
+  liveTextCircle.classList.toggle("live-green-text-OFF");
+}, 1400)

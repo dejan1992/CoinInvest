@@ -125,6 +125,23 @@ span{
   font-weight: 600;
 }
 
+#app-live{
+  font-size: 20px;
+  margin-bottom: 10px;
+  letter-spacing: 5px;
+}
+
+.live-green-text{
+  color: green;
+  transform: scale(0.7);
+  display:inline-block;
+  transition: all 1s ease-in-out;
+}
+
+.live-green-text-OFF{
+  display:none;
+}
+
 #app-refresh{
   margin-bottom: 10px;
 }
