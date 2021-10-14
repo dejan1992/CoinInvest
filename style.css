@@ -132,14 +132,13 @@ span{
 }
 
 .live-green-text{
-  color: green;
-  transform: scale(0.7);
-  display:inline-block;
-  transition: all 1s ease-in-out;
+  display:none;
 }
 
-.live-green-text-OFF{
-  display:none;
+.live-green-text-ON{
+  color: green;
+  display:inline-block;
+  transform: scale(0.7);
 }
 
 #app-refresh{

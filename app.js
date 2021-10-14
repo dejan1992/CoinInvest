@@ -175,12 +175,12 @@ function createElement(elementType, elementClass) {
 
 // Loader
 const loader = document.getElementById("loader");
-
 window.addEventListener("load", () => {
   loader.classList.add("disapear");
+
+  //LIVE circle blink
+  setInterval(() => {
+    liveTextCircle.classList.toggle("live-green-text-ON");
+  }, 1400)
 })
 
-//LIVE circle blink
-setInterval(() => {
-  liveTextCircle.classList.toggle("live-green-text-OFF");
-}, 1400)
